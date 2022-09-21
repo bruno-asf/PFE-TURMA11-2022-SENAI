@@ -1,7 +1,7 @@
-let dataAtual = new Date (2022,8,15);
-let dataEvento = new Date(2022,9,10);
-let  listaParticipantes = ["Vivian","Anne","João","luan","lucca"];
-let idadeParticipante = 20
+let dataAtual = new Date (2022,8,17);
+let dataEvento = new Date(2022,9,11);
+let  listaParticipantes = ["Rebeca","Anne","Stefanny","Letícia","Su"];
+let idadeParticipante = 18
 let numeroParticipantes = 0
 
 if(dataEvento>dataAtual) {
@@ -20,7 +20,7 @@ console.log(listaParticipantes)
 console.log("------------------")
 numeroParticipantes = listaParticipantes.length
 
-if (numeroParticipantes < 100 ) {
+if (numeroParticipantes < 50 ) {
     console.log("Permitir cadatro ")
 } else {
     console.log("cadastro Excedido")
