@@ -1,27 +1,36 @@
-let dataAtual = new Date (2022,8,17);
-let dataEvento = new Date(2022,9,11);
-let  listaParticipantes = ["Rebeca","Anne","Stefanny","Letícia","Su"];
-let idadeParticipante = 18
-let numeroParticipantes = 0
 
-if(dataEvento>dataAtual) {
-  console.log("Agendar evento")
-} else {
-    console.log(" data invalida")
-}
-console.log("---------------------")
-if (idadeParticipante >= 18) {
-    console.log("Entrada permitida")
-} else {
-    console.log("Idade Invalida")
-}
-console.log("------------------")    
-console.log(listaParticipantes)
-console.log("------------------")
-numeroParticipantes = listaParticipantes.length
+//Cadastro de eventos//
 
-if (numeroParticipantes < 50 ) {
-    console.log("Permitir cadatro ")
-} else {
-    console.log("cadastro Excedido")
+//Condição por idade.
+
+let participante = 17;
+
+if (participante >= 18) {
+    console.log("Você possui: " + participante + " anos, Cadastro permitido!")
+}
+else{
+    console.log("Você possui: " + participante + " anos, Idade não permitida!")
+}
+
+
+//Participantes do evento
+
+let participantesEvento = [ ];
+
+participantesEvento.push('Lia');
+participantesEvento.push('Bruno');
+participantesEvento.push('Stefanny');
+participantesEvento.push('Anny');
+participantesEvento.push('Thiago');
+participantesEvento.push('Su');
+participantesEvento.push('Júnior');
+
+console.log("Número de participantes são: " + participantesEvento.length);
+console.log(participantesEvento);
+
+//Limite de cadastro do evento
+if (participantesEvento.length < 100){
+    console.log("Cadastro Liberado")
+}else {
+    console.log ("Limite de participantes excedido!")
 }
